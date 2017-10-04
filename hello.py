@@ -1,8 +1,11 @@
 # hello.py
-# Python as a Tool for Social Scientists
+# Introduction to Python
+# Harvard IQSS
+# October 6, 2017
+
 # NaLette Brodnax
+# nbrodnax@iq.harvard.edu
 # www.nalettebrodnax.com
-# August 24, 2017
 
 print("Hello, world.")
 
