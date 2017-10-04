@@ -1,6 +1,7 @@
 ## Introduction to Python
 
 **Date:** Friday, October 6, 2017
+
 **Location:** CGIS Knafel Room K018, 1737 Cambridge St, Cambridge, MA 02138
 
 This workshop introduces the basic elements of Python, a general purpose programming language commonly used for data cleaning, analysis, visualization, and other applications.  Participants will learn how to set up a development environment for Python on their personal computers.  This workshop is intended for researchers and students who are new to programming.  No experience is required.
