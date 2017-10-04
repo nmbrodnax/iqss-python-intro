@@ -1,1 +1,1 @@
-# iqss-python-intro
+# python-social-science
