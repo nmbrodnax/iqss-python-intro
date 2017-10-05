@@ -55,9 +55,44 @@ Harvard University<br>
     |`mydict = {'name': 'Kylo', 'side': 'dark'}`|N/A|
     |`print(mydict['name'])`||
 
+ 3. Add the following code to your *hello.py* script, giving special attention to indentation.  Experiment with modifying the code.  For example, what happens if you indent the print statement on the last line?
+    ```python
+     name = 'Grace Hopper'
+
+    if len(name) < 20:
+        print('Yes')
+    else:
+        print('No')
+
+    i = 0
+    for letter in name:
+        if letter in ['a', 'e', 'i', 'o', 'u']:
+            i = i + 1
+    print(name + ' has ' + str(i) + ' vowels.')
+
+    i = 0
+    vowel_count = 0
+    while i < len(name):
+        if name[i] in ['a', 'e', 'i', 'o', 'u']:
+            vowel_count = vowel_count + 1
+        i = i + 1
+    print(name + ' has ' + str(vowel_count) + ' vowels.')
+    ```
+
+ 4. Add the following code to your *hello.py* script.  Change the argument in the function call to your own name or some other text.
+
+    ```python
+    my_string = 'aBcDe'
+    print(my_string)
+
+    print(my_string.lower())
 
 
+    def say_hello(name_string):
+        print('Hello, ' + str(name_string) + '!')
+        return None
 
+    say_hello('NaLette')
+    ```
 
-### Part 4: Working with Files
-
+[Click here](https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/hello.py) to download the code for all exercises.
