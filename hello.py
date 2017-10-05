@@ -9,6 +9,17 @@
 
 print("Hello, world.")
 
+movie = 'Rogue One'
+print(movie)
+i = 1
+i += 1
+print(i)
+print('A' + 'B')
+print('me'*3)
+print('a' == 'a')
+print('a' == 1)
+print(5 != 25/5)
+
 mystring = 'happy'
 print(mystring[0])
 print(mystring[2:4])
