@@ -57,7 +57,7 @@ Harvard University<br>
 
  3. Add the following code to your *hello.py* script, giving special attention to indentation.  Experiment with modifying the code.  For example, what happens if you indent the print statement on the last line?
     ```python
-     name = 'Grace Hopper'
+    name = 'Grace Hopper'
 
     if len(name) < 20:
         print('Yes')
@@ -79,12 +79,11 @@ Harvard University<br>
     print(name + ' has ' + str(vowel_count) + ' vowels.')
     ```
 
- 4. Add the following code to your *hello.py* script.  Using triple quotes, add an informative documentation string to the `say_hello()` function.  Try entering different types of data (text, numbers, etc.) as the argument for the function.  How does Python respond?
+ 4. Add the following code to your *hello.py* script.  Predict how `my_string` will be displayed before running the script.  Using triple quotes, add an informative documentation string to the `say_hello()` function.  Try entering different types of data (text, numbers, etc.) as the argument for the function.  How does Python respond?
 
     ```python
     my_string = 'aBcDe'
     print(my_string)
-
     print(my_string.lower())
 
 
