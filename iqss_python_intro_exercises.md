@@ -47,7 +47,7 @@ Harvard University<br>
 
     |Statement| Prediction|
     |:---|:---|
-    |`mystring = 'happy'`N/A|
+    |`mystring = 'happy'`|N/A|
     |`print(mystring[0])`||
     |`print(mystring[2:4])`||
     |`mylist = ['Leia', 'Rey', 'Maz']`|N/A|
@@ -79,7 +79,7 @@ Harvard University<br>
     print(name + ' has ' + str(vowel_count) + ' vowels.')
     ```
 
- 4. Add the following code to your *hello.py* script.  Change the argument in the function call to your own name or some other text.
+ 4. Add the following code to your *hello.py* script.  Using triple quotes, add an informative documentation string to the `say_hello()` function.  Try entering different types of data (text, numbers, etc.) as the argument for the function.  How does Python respond?
 
     ```python
     my_string = 'aBcDe'
