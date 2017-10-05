@@ -9,7 +9,7 @@ Harvard University<br>
 ## Workshop Exercises
 
 ### Part 1: Introduction
- 1. Complete the one-minute poll at [bit.ly/iqss106](http://bit.ly/i   qss106)
+ 1. Complete the one-minute poll at [bit.ly/iqss106](http://bit.ly/iqss106)
 
  2. After installing Python, open the Python IDE (such as Spyder or IDLE) on your machine.  Type the following into the interpreter:
  ```python
