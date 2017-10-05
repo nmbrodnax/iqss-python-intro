@@ -10,17 +10,17 @@ Harvard University<br>
 
 ### Part 1: Introduction
 
- 1-1. Complete the one-minute poll at [bit.ly/iqss106](http://bit.ly/iqss106)
+ 1. Complete the one-minute poll at [bit.ly/iqss106](http://bit.ly/iqss106)
 
 
 ### Part 2: Getting the Tools
 
- 2-1. After installing Python, open the Python IDE (such as Spyder or IDLE) on your machine.  Type the following into the interpreter:
+ 1. After installing Python, open the Python IDE (such as Spyder or IDLE) on your machine.  Type the following into the interpreter:
     ```python
     print('Hello, world.')
     ```
 
- 2-2. Create a file named *hello.py*.  You will add code to this script throughout Parts 2 and 3 of the workshop. On the first two lines, type the following:
+ 2. Create a file named *hello.py*.  You will add code to this script throughout Parts 2 and 3 of the workshop. On the first two lines, type the following:
     ```
     # My first Python script
     print('Hello, world.')
@@ -28,7 +28,7 @@ Harvard University<br>
     Save the script and run it from the IDE.
 
 ### Part 3: Programming Basics
- 3.1. The following code uses operators that have special meanings in Python.  Add the following statements to your *hello.py* script.  Predict what the output will be before running the script.
+ 1. The following code uses operators that have special meanings in Python.  Add the following statements to your *hello.py* script.  Predict what the output will be before running the script.
 
     |Statement| Prediction|
     |:---|:---|
@@ -43,7 +43,7 @@ Harvard University<br>
     |`print('a' == 1)`||
     |`print(5 != 25/5)`||
 
- 3.2. The following code demonstrates some of the different ways to reference the elements of a sequence.  Add the following statements to your *hello.py* script. Predict what the output will be before running the script.
+ 2. The following code demonstrates some of the different ways to reference the elements of a sequence.  Add the following statements to your *hello.py* script. Predict what the output will be before running the script.
 
     |Statement| Prediction|
     |:---|:---|
