@@ -1,10 +1,6 @@
 ## Introduction to Python
 [NaLette Brodnax](www.nalettebrodnax.com)<br>
-[The Institute for Quantitative Social Science](http://iq.harvard.edu)<br>
-Harvard University<br>
 
-**Date:** Friday, October 6, 2017<br>
-**Location:** CGIS Knafel Room K018, 1737 Cambridge St, Cambridge, MA 02138
 
 ## Workshop Exercises
 
