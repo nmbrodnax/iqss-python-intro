@@ -1,5 +1,5 @@
 ## Introduction to Python
-[NaLette Brodnax](www.nalettebrodnax.com)<br>
+[NaLette Brodnax](http://www.nalettebrodnax.com)<br>
 
 
 ## Workshop Exercises
