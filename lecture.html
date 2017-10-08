@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>lecture</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>notebook</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11726,7 +11726,9 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}@media print {
+}
+
+@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11747,7 +11749,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11771,14 +11773,14 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id="top"></a></p>
 <h1 id="Introduction-to-Python">Introduction to Python<a class="anchor-link" href="#Introduction-to-Python">&#182;</a></h1><p><a href="http://www.nalettebrodnax.com">NaLette Brodnax</a>, Postdoctoral Fellow, <a href="http://iq.harvard.edu">IQSS</a><br>
-<a href="mailto:nbrodnax@iq.harvard.edu">nbrodnax@iq.harvard.edu</a><br>
-October 6, 2017</p>
+<a href="mailto:nbrodnax@iq.harvard.edu">nbrodnax@iq.harvard.edu</a><br></p>
 <h3 id="Contents">Contents<a class="anchor-link" href="#Contents">&#182;</a></h3><ol>
 <li><a href="#intro">Introduction</a></li>
 <li><a href="#tools">About the Tools</a></li>
@@ -11793,14 +11795,15 @@ October 6, 2017</p>
  4.2 <a href="#withopen">Using  <code>with open()</code></a><br>
  4.3 <a href="#csv">Using the <code>csv</code> module</a></li>
 </ol>
-<h3 id="File-Downloads">File Downloads<a class="anchor-link" href="#File-Downloads">&#182;</a></h3><p><a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/hello.py">hello.py</a><br>
-<a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/workshop.py">workshop.py</a><br>
-<a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/kipling_jungle_book.txt">kipling_jungle_book.txt</a></p>
+<h3 id="File-Downloads">File Downloads<a class="anchor-link" href="#File-Downloads">&#182;</a></h3><p><a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/files/hello.py">hello.py</a><br>
+<a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/files/workshop.py">workshop.py</a><br>
+<a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/files/kipling_jungle_book.txt">kipling_jungle_book.txt</a></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11827,7 +11830,8 @@ October 6, 2017</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11836,12 +11840,13 @@ October 6, 2017</p>
 <h4 id="Text-Editor-for-Writing-Programs">Text Editor for Writing Programs<a class="anchor-link" href="#Text-Editor-for-Writing-Programs">&#182;</a></h4><p>A text editor is a tool that you can use to write commands in plain, unprocessed text and save them in a script.  All operating systems include a basic text editor, such as NotePad or TextEdit.  Filenames of Python scripts end in <em>.py</em>.</p>
 <h4 id="Command-Line-Interface-for-Interacting-with-Your-OS">Command Line Interface for Interacting with Your OS<a class="anchor-link" href="#Command-Line-Interface-for-Interacting-with-Your-OS">&#182;</a></h4><p>Every operating system has a special interpreter that allows the programmer to interact with the system through text-based commands.  The <strong>command line interface</strong> can be used to access any programs or files available to the programmer. This text-based approach is generally more flexible and more powerful than using a graphical user interface.</p>
 <h3 id="Mise-En-Place:-Integrated-Development-Environments"><em>Mise En Place</em>: Integrated Development Environments<a class="anchor-link" href="#Mise-En-Place:-Integrated-Development-Environments">&#182;</a></h3><p>Software that combines an interpreter, text editor, and command line interface into an easily navigable user interface is called an <strong>integrated development environment (IDE)</strong>.  An IDE might also include a file browser, version control integration, or other tools. If you install Python using installers from the <a href="https://www.python.org/">Python Software Foundation</a>, the installation will include a basic IDE called IDLE.</p>
-<h4 id="Anaconda">Anaconda<a class="anchor-link" href="#Anaconda">&#182;</a></h4><p><a href="https://www.continuum.io/what-is-anaconda">Anaconda</a> is a free data science plaform that you can <a href="https://www.continuum.io/">download</a> from Continuum Analytics.  Anaconda bundles Python with several programs and tools, including an IDE called Spyder and many of the most popular Python libraries.  Anaconda is useful because it provides several tools that programmers would otherwise need to install and configure individually.  It provides both a command line utility called <strong><code>conda</code></strong> and a graphical user interface called <strong><code>anaconda-navigator</code></strong> for programmers who are less familiar or less comfortable using the command line.</p>
+<h4 id="Anaconda">Anaconda<a class="anchor-link" href="#Anaconda">&#182;</a></h4><p><a href="https://www.continuum.io/what-is-anaconda">Anaconda</a> is a free data science plaform that you can <a href="https://www.anaconda.com/downloads/">download</a> from Continuum Analytics.  Anaconda bundles Python with several programs and tools, including an IDE called Spyder and many of the most popular Python libraries.  Anaconda is useful because it provides several tools that programmers would otherwise need to install and configure individually.  It provides both a command line utility called <strong><code>conda</code></strong> and a graphical user interface called <strong><code>anaconda-navigator</code></strong> for programmers who are less familiar or less comfortable using the command line.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11864,7 +11869,8 @@ October 6, 2017</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11884,17 +11890,19 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you work through this tutorial, you can add code to your <em>hello.py</em> script.  The code for all examples in Sections <a href="#tools">2</a> and <a href="#basics">3</a> can be found in the <a href="https://raw.githubusercontent.com/nmbrodnax/python-social-science/master/hello.py">hello.py</a> file.</p>
+<p>As you work through this tutorial, you can add code to your <em>hello.py</em> script.  The code for all examples in Sections <a href="#tools">2</a> and <a href="#basics">3</a> can be found in the <a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/files/hello.py">hello.py</a> file.</p>
 <h3 id="Getting-Help">Getting Help<a class="anchor-link" href="#Getting-Help">&#182;</a></h3><p>There are many resources for getting help when you run into problems.  The Python Software Foundation provides detailed <a href="https://docs.python.org/3/">documentation</a> as well as <a href="https://wiki.python.org/moin/BeginnersGuide">tutorials</a> for beginners, installation instructions, and links to programmer forums.  The site <a href="https://stackoverflow.com/">Stack Overflow</a> is also helpful for specific programming questions.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11904,7 +11912,8 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11914,7 +11923,8 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12025,7 +12035,8 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12035,7 +12046,8 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12071,7 +12083,8 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12094,7 +12107,8 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12104,7 +12118,8 @@ Python will recognize any line beginning with <code>#</code> as a <strong>commen
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12152,7 +12167,8 @@ else:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12194,7 +12210,8 @@ else:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12225,7 +12242,8 @@ else:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12255,7 +12273,8 @@ else:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12286,7 +12305,8 @@ else:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12296,7 +12316,8 @@ else:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12330,7 +12351,8 @@ else:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12366,7 +12388,8 @@ else:
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12501,7 +12524,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12511,12 +12535,13 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id="files"></a></p>
-<h2 id="4.-Working-with-Files">4. Working with Files<a class="anchor-link" href="#4.-Working-with-Files">&#182;</a></h2><p>Creating, accessing, and manipulating files are among the most basic tasks that a programmer will do with Python.  In this section, we will work through an example to demonstrate different options for working with files.  If you are following this tutorial using your own installation of Python, you need to download the <a href="https://raw.githubusercontent.com/nmbrodnax/python-social-science/master/kipling_jungle_book.txt">kipling_jungle_book.txt</a> file.  All code for this section can be found in the <a href="https://raw.githubusercontent.com/nmbrodnax/python-social-science/master/workshop.py">workshop.py</a> file.</p>
+<h2 id="4.-Working-with-Files">4. Working with Files<a class="anchor-link" href="#4.-Working-with-Files">&#182;</a></h2><p>Creating, accessing, and manipulating files are among the most basic tasks that a programmer will do with Python.  In this section, we will work through an example to demonstrate different options for working with files.  If you are following this tutorial using your own installation of Python, you need to download the <a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/files/kipling_jungle_book.txt">kipling_jungle_book.txt</a> file.  All code for this section can be found in the <a href="https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/files/workshop.py">workshop.py</a> file.</p>
 <p>What do we want to do?</p>
 <ol>
 <li>Ask the user for the name of a text file using the <code>input()</code> function. Note: <code>input()</code> accepts and returns a string and accepts an optional prompt argument.</li>
@@ -12557,7 +12582,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12567,7 +12593,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12603,7 +12630,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12613,7 +12641,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12623,7 +12652,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12637,7 +12667,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12719,7 +12750,8 @@ Programmers can create their own packages and publish them for use by others.  P
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
