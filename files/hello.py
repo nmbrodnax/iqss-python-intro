@@ -1,10 +1,6 @@
 # hello.py
 # Introduction to Python
-# Harvard IQSS
-# October 6, 2017
-
 # NaLette Brodnax
-# nbrodnax@iq.harvard.edu
 # www.nalettebrodnax.com
 
 print("Hello, world.")
