@@ -6,7 +6,7 @@
 
 ### Part 1: Introduction
 
- 1. Complete the one-minute poll at [bit.ly/iqss106](http://bit.ly/iqss106)
+ 1. Complete the one-minute poll at [bit.ly/dsspoll](http://bit.ly/dsspoll)
 
 
 ### Part 2: Getting the Tools
@@ -90,4 +90,4 @@
     say_hello('NaLette')
     ```
 
-[Click here](https://raw.githubusercontent.com/nmbrodnax/iqss-python-intro/master/hello.py) to download the code for all exercises.
+[Click here](https://github.com/nmbrodnax/iqss-python-intro/tree/master/files) to download the code for all exercises.
